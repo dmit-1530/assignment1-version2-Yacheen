@@ -3,15 +3,49 @@
     --blue-grey-100: #CFD8DC;
     --blue-grey-200: #B0BEC5;
     --blue-grey-900: #263238;
+    --nav-background: #111111;
+    --black: #000000;
 }
 
 body {
     color: #000;
     text-align: center; 
 }
+p {
+    margin: 0;
+}
 
 header, footer {
     background-color: var(--blue-grey-50);
     color: #fff;
-    padding: 2rem 4rem;   
+}
+nav {
+    width: 100%;
+    background: var(--nav-background);
+    padding: 3rem 2rem 1rem 2rem;
+}
+.etudes-container {
+    display: flex;
+    justify-content: center;
+}
+.etudes {
+    font-size: 56px;
+}
+.etudes-logo {
+    width: 91px;
+    height: 58px;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+section {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1440px) {
 }

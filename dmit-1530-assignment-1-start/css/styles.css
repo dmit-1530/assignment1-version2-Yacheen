@@ -155,10 +155,10 @@ footer ul li {
 .disclaimer {
     display: flex;
     align-items: center;
+    justify-content: center;
     font-size: 0.75rem;
     color: var(--blue-grey-200);
 }
-
 
 @media screen and (min-width: 768px) {
     .element-content {
@@ -196,6 +196,7 @@ footer ul li {
     .footer-top-side {
         display: flex;
         align-items: center;
+        justify-content: space-between;
     }
     .footer-links {
         padding-top: 4rem;
@@ -206,4 +207,22 @@ footer ul li {
     }
 }
 @media screen and (min-width: 1440px) {
+    .element-content {
+        max-width: 64rem;
+    }
+    section:nth-child(2) .element-content article:not(:first-child) {
+        text-align: left;
+        max-width: 20rem;
+    }
+    section:nth-child(4) .element-content article:nth-child(1) {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    section:nth-child(4) .element-content article:nth-child(2) {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    section:nth-child(4) .element-content>div {
+        display: flex;
+    }
 }

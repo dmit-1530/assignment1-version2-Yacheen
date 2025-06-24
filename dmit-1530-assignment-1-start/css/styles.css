@@ -66,6 +66,7 @@ nav ul, footer ul {
 nav {
     margin-bottom: 2rem;
     padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 .etudes-container {
     display: flex;
@@ -124,9 +125,6 @@ article, article ul li {
 footer {
     background: var(--footer-nav-background);
     padding-bottom: 4rem;
-}
-footer ul {
-    margin-bottom: 2rem;
 }
 footer nav {
     text-align: left;

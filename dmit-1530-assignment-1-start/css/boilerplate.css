@@ -1,4 +1,4 @@
-/* Generla styles*/
+/* General styles*/
 :root {
     --blue-grey-50: #ECEFF1;
     --blue-grey-100: #CFD8DC;
@@ -30,11 +30,25 @@ h2 {
 section p {
     margin-bottom: 2rem;
 }
+section {
+    padding: 2rem 0rem;
+}
 img {
     border-radius: 8px;
 }
 ul {
     margin: 0;
+}
+.element-content {
+    max-width: 20rem;
+    margin: 0 auto;
+}
+
+article, article ul li {
+    margin-bottom: 1rem;
+}
+.text-align-left {
+    text-align: left;
 }
 
 /* nav styles */
@@ -69,13 +83,68 @@ header, footer {
     width: 100%;
     background: var(--dark-background);
 }
-.element-content {
-    max-width: 20rem;
-    margin: 0 auto;
+
+
+/* footer styles */
+footer {
+    background: var(--footer-nav-background);
+    padding-bottom: 4rem;
+}
+footer nav {
+    text-align: left;
+    background: var(--footer-nav-background);
+}
+footer nav .etudes-container {
+    justify-content: flex-start;
+}
+footer nav div:nth-child(2) {
+    color: var(--blue-grey-200);
+    font-size: 0.80rem;
+}
+.footer-links {
+    display: flex;
+}
+footer ul li:first-child {
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+}
+footer ul li {
+    margin-bottom: 1rem;
+    font-size: 0.75rem;
+    color: var(--blue-grey-200);
+}
+.disclaimer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    color: var(--blue-grey-200);
 }
 @media screen and (min-width: 768px) {
     .element-content {
         max-width: 44rem;
+    }
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    nav ul {
+        flex-grow: 1;
+        max-width: 20rem;
+    }
+    .footer-top-side {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .footer-links {
+        padding-top: 4rem;
+    }
+    footer nav {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
 @media screen and (min-width: 1440px) {

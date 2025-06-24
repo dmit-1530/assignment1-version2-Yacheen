@@ -1,41 +1,4 @@
 /* General styles */
-:root {
-    --blue-grey-50: #ECEFF1;
-    --blue-grey-100: #CFD8DC;
-    --blue-grey-200: #B0BEC5;
-    --blue-grey-900: #263238;
-    --blue-grey-800: #37474F;
-    --dark-background: #111111;
-    --footer-nav-background: #191919;
-    --black: #000000;
-    --white: #ffffff;
-    --button-text-color: #EDEDED;
-}
-body {
-    color: #000;
-    text-align: center; 
-}
-p {
-    margin: 0;
-    font-family: "Inter", sans-serif
-}
-li {
-    font-family: "Inter", sans-serif
-}
-h2 {
-    font-size: 2rem;
-    font-weight: 200;
-    font-family: "Georgia", sans-serif;
-}
-section p {
-    margin-bottom: 2rem;
-}
-img {
-    border-radius: 8px;
-}
-ul {
-    margin: 0;
-}
 button {
     background: var(--dark-background);
     border: none;
@@ -44,53 +7,15 @@ button {
     padding: 1rem;
     margin-bottom: 3rem;
 }
-header, footer {
-    color: #fff;
-    width: 100%;
-    background: var(--dark-background);
-}
-.element-content {
-    max-width: 20rem;
-    margin: 0 auto;
-}
-nav ul, footer ul {
-    list-style-type: none;
-}
 .asterisk {
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 0;
 }
 
-/* nav styles */
-nav {
-    margin-bottom: 2rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-.etudes-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.etudes {
-    font-size: 4rem;
-    font-family: "Libre Baskerville", serif;
-}
-.etudes-logo {
-    width: 91px;
-    height: 58px;
-    border-radius: 0px;
-}
-nav ul {
-    display: flex;
-    justify-content: space-between;
-}
 /* main styles */
 section {
-    padding: 2rem 2rem 2rem 2rem;
-    margin: 0 auto;
-    padding-bottom: 4rem;
+    padding: 2rem 0rem;
 }
 article h3, article h2 {
     margin-top: 0;
@@ -159,9 +84,6 @@ footer ul li {
 }
 
 @media screen and (min-width: 768px) {
-    .element-content {
-        max-width: 44rem;
-    }
     nav {
         display: flex;
         align-items: center;
@@ -180,16 +102,11 @@ footer ul li {
         text-align: left;
         max-width: 21.5rem;
     }
-    section:nth-child(4) .element-content article:nth-child(2), section:nth-child(4) {
+
+    section:nth-child(4) .element-content>div {
         display: flex;
-        align-items: center;
+        align-items: flex-end;
         column-gap: 2rem;
-    }
-    section:nth-child(4) .element-content article:nth-child(3) {
-        display: flex;
-        align-items: center;
-        column-gap: 2rem;
-        flex-direction: row-reverse;
     }
     .footer-top-side {
         display: flex;
@@ -205,8 +122,6 @@ footer ul li {
     }
 }
 @media screen and (min-width: 1440px) {
-    .element-content {
-        max-width: 64rem;
     }
     section:nth-child(2) .element-content article:not(:first-child) {
         text-align: left;

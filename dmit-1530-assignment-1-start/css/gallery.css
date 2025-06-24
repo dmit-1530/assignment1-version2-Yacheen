@@ -18,7 +18,9 @@ section:nth-child(4) {
     color: white;
     text-align: left;
 }
-
+section:nth-child(4) h2 {
+    text-align: center;
+}
 section:nth-child(4) ul li {
     margin-bottom: 1rem;
 }

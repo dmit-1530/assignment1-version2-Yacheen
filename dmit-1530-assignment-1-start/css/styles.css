@@ -114,6 +114,12 @@ main section:nth-child(5)>div {
     border-radius: 8px; 
     padding: 2rem 1rem;
 }
+.text-align-left {
+    text-align: left;
+}
+article, article ul li {
+    margin-bottom: 1rem;
+}
 /* footer styles */
 footer {
     background: var(--footer-nav-background);
@@ -152,6 +158,7 @@ footer ul li {
     font-size: 0.75rem;
     color: var(--blue-grey-200);
 }
+
 
 @media screen and (min-width: 768px) {
 }
